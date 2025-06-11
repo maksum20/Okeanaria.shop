@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Океанарія — Рибний магазин</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+     <a href="#" class="logo">
+  <img src="logo.png" alt="Логотип" class="logo-img">
+ Океанарія
+</a>
+<!-- навігація -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">Про нас</a></li>
+          <li><a href="#products">Асортимент</a></li>
+          <li><a href="#reviews">Відгуки</a></li>
+          <li><a href="#partners">Партнери</a></li>
+          <li><a href="#contact">Контакти</a></li>
+        </ul>
+        <div class="burger" id="burger">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+<!-- Вступний текст -->
+  <section class="hero">
+    <div class="container">
+      <h1>Свіжа риба щодня</h1>
+      <h3>Морські делікатеси прямо до вашого столу. Завітайте до “Океанарії”!</h3><br></br>
+      <a href="#products" class="btn">Дивитись асортимент</a>
+    </div>
+  </section>
+
+<!-- про нас -->
+ <section id="about" class="about container">
+  <h2 style="text-align:center">Про магазин</h2>
+  <p>
+    <strong>“Океанарія”</strong> — місце, де свіжа риба перетворюється на справжній гастрономічний шедевр!<br><br>
+    Ми віримо, що найкраща їжа — це та, яка має історію. Саме тому кожен наш продукт — це не просто риба, а частинка моря, виловлена з турботою та майстерністю. Ми ретельно обираємо постачальників, контролюємо якість на кожному етапі, і можемо з упевненістю сказати: “Океанарія” — це гарантія справжнього смаку.<br><br>
+    Для нас важливо, щоб ви були впевнені у своєму виборі. Тому ми дбаємо не лише про свіжість, а й про прозорість — ви завжди знаєте, звідки ваша риба, і як вона потрапила до вас.<br><br>
+    <i>“Океанарія” — це сімейна атмосфера, дружній сервіс, індивідуальний підхід і завжди приємні ціни.</i><br><br>
+    Обираючи нас, ви отримуєте не просто продукти, а турботу, підтримку і частинку справжнього моря.<br><br>
+    <b>Дякуємо, що довіряєте нам свою вечерю!</b>
+  </p>
+</section>
+<!-- Асортимент -->
+  <section id="products" class="products container">
+    <h2>Асортимент</h2>
+    <div class="product-grid">
+      <!-- карточки-продуктів -->
+      <div class="product-card">
+        <img src="zolota-rybka.jpg" alt="Золота-рибка">
+        <h3>Золота-рибка</h3>
+        <p>205 грн</p>
+      </div>
+      <div class="product-card">
+        <img src="forel.jpg" alt="Форель">
+        <h3>Форель</h3>
+        <p>120 грн/кг</p>
+      </div>
+      <div class="product-card">
+        <img src="okyn.jpg" alt="Окунь">
+        <h3>Окунь</h3>
+        <p>195 грн/кг</p>
+      </div>
+      <div class="product-card">
+        <img src="Rak.jpg" alt="Рак">
+        <h3>Рак</h3>
+        <p>50 грн/кг</p>
+      </div>
+      <div class="product-card">
+        <img src="krevetka.jpg" alt="Креветки">
+        <h3>Креветки</h3>
+        <p>390 грн/кг</p>
+      </div>
+      <div class="product-card">
+        <img src="Kalmar.jpg" alt="Кальмар">
+        <h3>Кальмар</h3>
+        <p>320 грн/кг</p>
+      </div>
+      <div class="product-card">
+        <img src="midii.png" alt="Мідії">
+        <h3>Мідії</h3>
+        <p>95 грн/кг</p>
+      </div>
+      <div class="product-card">
+        <img src="laminariya.jpg" alt="Ламінарія">
+        <h3>Ламінарія</h3>
+        <p>32 грн/кг</p>
+      </div>
+    </div>
+  </section>
+
+        <!-- Відгуки -->
+  <section id="reviews" class="reviews container">
+  <h2>Відгуки клієнтів</h2>
+  <div class="review-grid"></div>
+  <div class="add-review">
+    <br></br>
+    <h2>Додати відгук</h2>
+    <form id="reviewForm">
+  <input type="text" name="reviewName" placeholder="Ваше ім'я" required>
+  <textarea name="reviewText" placeholder="Ваш відгук" required></textarea>
+  <div class="star-rating">
+    <span data-value="1">&#9733;</span>
+    <span data-value="2">&#9733;</span>
+    <span data-value="3">&#9733;</span>
+    <span data-value="4">&#9733;</span>
+    <span data-value="5">&#9733;</span>
+    <input type="hidden" name="starValue" id="starValueInput" value="5">
+  </div>
+  <button class="btn" type="submit">Надіслати</button>
+</form>
+  </div>
+</section>
+ 
+          <!-- Партнери -->
+  <section id="partners" class="partners container">
+  <h2>Партнери</h2>
+  <div class="partner-grid">
+    <div class="partner-card">
+      <img src="https://dummyimage.com/70x70/00bcd4/ffffff&text=AF" alt="AquaFresh">
+      <div>
+        <strong>AquaFresh</strong>
+        <p>Постачальник морепродуктів, Одеса</p>
+      </div>
+    </div>
+    <div class="partner-card">
+      <img src="https://dummyimage.com/70x70/0097a7/ffffff&text=SF" alt="SeaFood Group">
+      <div>
+        <strong>SeaFood Group</strong>
+        <p>Експортна компанія, Гданськ</p>
+      </div>
+    </div>
+    <div class="partner-card">
+      <img src="https://dummyimage.com/70x70/00bcd4/ffffff&text=FR" alt="FishRun">
+      <div>
+        <strong>FishRun</strong>
+        <p>Дистриб’ютор риби, Київ</p>
+      </div>
+    </div>
+    <div class="partner-card">
+      <img src="https://dummyimage.com/70x70/0097a7/ffffff&text=MC" alt="MarinaCatch">
+      <div>
+        <strong>MarinaCatch</strong>
+        <p>Морський фермер, Бургас</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+            <!-- Контакти -->
+  <section id="contact" class="contact container">
+    <h2>Контакти</h2>
+    <div class="contact-info">
+      <p><b>Демо-адреса:</b> м.Коломия,Івано-Франківська область вул. Глибока, 12</p>
+      <p><b>Демо-Телефон:</b> +380 (67) 123-45-67</p>
+      <p>
+        <a href="https://instagram.com" target="_blank">Instagram</a> |    
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+      </p>
+    </div>
+                  <!-- Карта -->
+  <div class="map">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.730601536506!2d25.03848731604197!3d48.52874079863686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4733a05d1b8c4579%3A0x6e78c1c9e7ebca37!2z0JrQsNGI0LjQvSDQo9C40YbRjyDQnNC40LzQvtC9LCDQhtGA0L7QstC-0Lkg0J_QsNCy0LvQsCDQn9C-0LvRjNGG0LAsINCa0LjRgNC90LAsINCa0LjRgNC90LAsINCR0L7Qs9C-0YDQsNC80LDRhtGM0LrQsCwgNzgyMDA!5e0!3m2!1suk!2sua!4v1717005794388!5m2!1suk!2sua"
+    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+  </div>
+         <!-- форми -->
+  <div class="contactWithUS">
+  <h2>Зв’яжіться з нами</h2>
+    <form action="https://formspree.io/f/xpwdvvqn" method="POST" >
+      <input type="text" name="name" placeholder="Ваше ім’я" required>
+      <input type="email" name="email" placeholder="Email" required>
+        <select name="topic" required>
+          <option value="" disabled selected>Оберіть тему звернення</option>
+          <option value="Купівля риби оптом">Купівля риби оптом</option>
+          <option value="Запитання по асортименту">Запитання по асортименту</option>
+          <option value="Проблеми з сайтом">Проблеми з сайтом</option>
+          <option value="Співпраця / Партнерство">Співпраця / Партнерство</option>
+          <option value="Інше">Інше</option>
+       </select>
+      <textarea name="message" placeholder="Ваше повідомлення"></textarea>
+      <button class="btn" type="submit">Надіслати</button>
+    </form>
+</div>
+      <!-- кнопка по надісланню форми -->
+</section>
+<div id="thankyou-popup" class="popup-hidden">
+  <div class="popup-content">
+    <p>Дякуємо! Ваше повідомлення надіслано.</p>
+    <button id="popup-close">Закрити</button>
+  </div>
+</div>
+          <!-- підвал сайту -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Океанарія | Створено з любов’ю</p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
