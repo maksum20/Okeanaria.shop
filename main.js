@@ -231,3 +231,21 @@ reviewForm.addEventListener('submit', e => {
 
 // Показати при завантаженні
 window.addEventListener('DOMContentLoaded', loadReviews);
+// Для з'явлення номеру телефону
+document.addEventListener('DOMContentLoaded', function() {
+  const topic = document.getElementById('topic');
+  const phoneField = document.getElementById('phone-field');
+  const phoneInput = document.getElementById('phone');
+  if (topic && phoneField && phoneInput) {
+    topic.addEventListener('change', function() {
+      if (topic.value === 'Купівля риби оптом') {
+        phoneField.style.display = 'block';
+        phoneInput.required = true;
+      } else {
+        phoneField.style.display = 'none';
+        phoneInput.required = false;
+        phoneInput.value = '';
+      }
+    });
+  }
+});

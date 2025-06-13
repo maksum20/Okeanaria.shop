@@ -180,21 +180,31 @@
          <!-- форми -->
   <div class="contactWithUS">
   <h2>Зв’яжіться з нами</h2>
-    <form action="https://formspree.io/f/xpwdvvqn" method="POST" >
-      <input type="text" name="name" placeholder="Ваше ім’я" required>
-      <input type="email" name="email" placeholder="Email" required>
-        <select name="topic" required>
-          <option value="" disabled selected>Оберіть тему звернення</option>
-          <option value="Купівля риби оптом">Купівля риби оптом</option>
-          <option value="Запитання по асортименту">Запитання по асортименту</option>
-          <option value="Проблеми з сайтом">Проблеми з сайтом</option>
-          <option value="Співпраця / Партнерство">Співпраця / Партнерство</option>
-          <option value="Інше">Інше</option>
-       </select>
-      <textarea name="message" placeholder="Ваше повідомлення"></textarea>
-      <button class="btn" type="submit">Надіслати</button>
-    </form>
+  <form action="https://formspree.io/f/xpwdvvqn" method="POST">
+    <input type="text" name="name" placeholder="Ваше ім’я" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <select name="topic" id="topic" required>
+      <option value="" disabled selected>Оберіть тему звернення</option>
+      <option value="Купівля риби оптом">Формування замовлення</option>
+      <option value="Запитання по асортименту">Запитання по асортименту</option>
+      <option value="Проблеми з сайтом">Проблеми з сайтом</option>
+      <option value="Співпраця / Партнерство">Співпраця / Партнерство</option>
+      <option value="Інше">Інше</option>
+    </select>
+
+    <!-- Додаткове поле для телефону -->
+    <div id="phone-field" style="display:none; margin-top:1rem;">
+      <input type="tel" name="phone" id="phone" placeholder="Ваш номер телефону">
+      <div style="font-size:0.85rem; color:#808080; margin-top:0.3rem;">
+        Наш менеджер з вами зв'яжеться
+      </div>
+    </div>
+
+    <textarea name="message" placeholder="Ваше повідомлення"></textarea>
+    <button class="btn" type="submit">Надіслати</button>
+  </form>
 </div>
+
       <!-- кнопка по надісланню форми -->
 </section>
 <div id="thankyou-popup" class="popup-hidden">
