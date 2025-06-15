@@ -211,6 +211,7 @@ section h2 {
   margin-top: 2rem;
 }
 
+
 .product-card {
   background: var(--white);
   border-radius: 1.3rem;
@@ -237,8 +238,14 @@ section h2 {
 }
 
 .product-card h3 {
-  margin: 0.5rem 0;
+  margin-top:auto;
   font-size: 1.2rem;
+  min-height: 2.4rem; /* зарезервувати висоту для вирівнювання */
+  text-align: center;
+}
+.product-card p {
+  font-size: 1.1rem;
+  margin-top: auto;
 }
         /* Про нас */
 .about {
