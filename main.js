@@ -93,7 +93,7 @@ const defaultReviews = [
   },
 {
     name: "Дмитро Б.",
-    text: "Дякую за якісний сервіс! Завжди приємно купувати в “Океанарії”.",
+    text: "Дякую за якісний сервіс! Завжди приємно купувати в “Океонарії”.",
     stars: 5,
     img: "https://randomuser.me/api/portraits/men/5.jpg"
 },
@@ -231,6 +231,7 @@ reviewForm.addEventListener('submit', e => {
 
 // Показати при завантаженні
 window.addEventListener('DOMContentLoaded', loadReviews);
+
 // Для з'явлення номеру телефону
 document.addEventListener('DOMContentLoaded', function() {
   const topic = document.getElementById('topic');
