@@ -288,21 +288,6 @@ section h2 {
   margin-top: 0.3rem;
   box-shadow: 0 4px 10px rgba(0,188,212,0.10);
 }
-          /* зірки */
-.star-rating {
-  font-size: 2rem;
-  color: #d8d8d8;
-  cursor: pointer;
-  user-select: none;
-  margin-bottom: 1rem;
-  display: flex;
-  gap: 0.2em;
-}
-.star-rating .active,
-.star-rating .hovered {
-  color: #ffb400;
-  transition: color 0.18s;
-}
 .review-card strong {
   font-size: 1.1rem;
   color: var(--primary-color);
